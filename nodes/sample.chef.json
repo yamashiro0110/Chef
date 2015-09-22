@@ -13,9 +13,12 @@
     "remove_anonymous_users": true
   },
   "run_list": [
+    "recipe[user]",
+    "recipe[vim]",
     "recipe[java]",
     "recipe[mysql::server]",
-    "recipe[mysql::client]"
+    "recipe[mysql::client]",
+    "recipe[apache2]"
   ],
   "automatic": {
     "ipaddress": "sample.chef"

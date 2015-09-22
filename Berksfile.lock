@@ -1,11 +1,15 @@
 DEPENDENCIES
+  apache2 (~> 3.1.0)
   java
   mysql (= 5.6.3)
+  vim (~> 1.1.4)
 
 GRAPH
+  apache2 (3.1.0)
   java (1.35.0)
   mysql (5.6.3)
     yum-mysql-community (>= 0.0.0)
+  vim (1.1.4)
   yum (3.7.1)
   yum-mysql-community (0.1.18)
     yum (>= 3.0)
