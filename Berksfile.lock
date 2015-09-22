@@ -1,5 +1,11 @@
 DEPENDENCIES
   java
+  mysql (= 5.6.3)
 
 GRAPH
   java (1.35.0)
+  mysql (5.6.3)
+    yum-mysql-community (>= 0.0.0)
+  yum (3.7.1)
+  yum-mysql-community (0.1.18)
+    yum (>= 3.0)

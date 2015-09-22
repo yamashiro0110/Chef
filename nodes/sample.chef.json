@@ -1,0 +1,23 @@
+{
+  "java": {
+    "install_flavor": "oracle",
+    "jdk_version": 8,
+    "oracle": {
+      "accept_oracle_download_terms": true
+    }
+  },
+  "mysql": {
+    "version": "5.6",
+    "port": "3306",
+    "server_root_password": "hogehoge",
+    "remove_anonymous_users": true
+  },
+  "run_list": [
+    "recipe[java]",
+    "recipe[mysql::server]",
+    "recipe[mysql::client]"
+  ],
+  "automatic": {
+    "ipaddress": "sample.chef"
+  }
+}
