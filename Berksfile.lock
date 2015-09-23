@@ -1,11 +1,17 @@
 DEPENDENCIES
   apache2 (~> 3.1.0)
+  gradle
+    git: https://github.com/michaelklishin/gradle-chef-cookbook
+    revision: d11fca5e88c528f73f88239da1956b2fbbbb0ec9
   java
   mysql (= 5.6.3)
   vim (~> 1.1.4)
 
 GRAPH
   apache2 (3.1.0)
+  gradle (1.0.0)
+    install_from (>= 0.0.0)
+  install_from (3.0.4)
   java (1.35.0)
   mysql (5.6.3)
     yum-mysql-community (>= 0.0.0)

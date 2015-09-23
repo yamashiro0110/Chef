@@ -21,6 +21,7 @@
     "recipe[apache2]",
     "recipe[java]",
     "recipe[scheme]",
+    "recipe[gradle::tarball]",
     "recipe[repository]"
   ],
   "automatic": {
