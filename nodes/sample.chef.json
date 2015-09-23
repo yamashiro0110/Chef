@@ -22,7 +22,7 @@
     "recipe[java]",
     "recipe[scheme]",
     "recipe[gradle::tarball]",
-    "recipe[repository]"
+    "recipe[spring-boot-jar]"
   ],
   "automatic": {
     "ipaddress": "sample.chef"

@@ -22,5 +22,3 @@ add_cnt = 0
     supports :manage_home => true
   end
 end
-
-
