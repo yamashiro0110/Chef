@@ -1,0 +1,10 @@
+{
+  "name": "sys",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "run_list": [
+    "recipe[user]",
+    "recipe[git]",
+    "recipe[vim]"
+  ]
+}

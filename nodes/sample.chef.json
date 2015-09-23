@@ -1,28 +1,10 @@
 {
-  "java": {
-    "install_flavor": "oracle",
-    "jdk_version": 8,
-    "oracle": {
-      "accept_oracle_download_terms": true
-    }
-  },
-  "mysql": {
-    "version": "5.6",
-    "port": "3306",
-    "server_root_password": "hogehoge",
-    "remove_anonymous_users": true
-  },
   "run_list": [
-    "recipe[user]",
-    "recipe[git]",
-    "recipe[vim]",
-    "recipe[mysql::server]",
-    "recipe[mysql::client]",
-    "recipe[apache2]",
-    "recipe[java]",
-    "recipe[scheme]",
-    "recipe[gradle::tarball]",
-    "recipe[spring-boot-jar]"
+    "role[sys]",
+    "role[db]",
+    "role[web]",
+    "role[java]",
+    "role[spring_boot]"
   ],
   "automatic": {
     "ipaddress": "sample.chef"
